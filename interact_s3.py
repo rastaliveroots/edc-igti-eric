@@ -3,8 +3,8 @@ import pandas as pd
 
 # criar cliente para interagir com AWS S3
 
-access_key = "AKIAZVY46D5S56W6QEPO"
-secret_access = "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"
+access_key = "secrets.AWS_ACCESS_KEY_ID"
+secret_access = "secrets.AWS_SECRET_ACCESS_KEY"
 
 s3_client = boto3.client("s3",aws_access_key_id=access_key,aws_secret_access_key=secret_access)
 
