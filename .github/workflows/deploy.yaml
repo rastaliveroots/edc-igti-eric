@@ -24,9 +24,9 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ Secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ Secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-2
+        aws_access_key_id: ${{ Secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ Secrets.AWS_SECRET_ACCESS_KEY }}
+        aws_region: us-east-2
 
     - name: IaC Apply
       env:
