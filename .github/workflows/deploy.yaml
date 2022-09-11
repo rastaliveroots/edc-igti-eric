@@ -32,7 +32,7 @@ jobs:
       env:
         COMMAND_IAC: terraform
       run: |
-        cd /home/runner/work/_temp/395c3d2e-5fda-413b-8ada-a41ab3105bda/infrastructure
+        cd infrastructure
         $COMMAND_IAC init
         $COMMAND_IAC validate
         $COMMAND_IAC plan
