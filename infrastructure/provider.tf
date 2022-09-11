@@ -1,6 +1,6 @@
-#provider "aws" {
-#  region = var.aws_region
-#}
+provider "aws" {
+  region = var.aws_region
+}
 
 #centralizar o arquivo de controlo do terraform
 terraform {
@@ -10,4 +10,3 @@ terraform {
     region = "us-east-2"
   }
 }
-#teste eric
